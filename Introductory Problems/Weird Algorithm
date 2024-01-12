@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long
+#define pb push_back
+#define mset(m,v) memset(m,v,sizeof(m))
+#define dbg(var) cout<<#var<<"="<<var<<"\n";
+#define nl cout<<"\n";
+typedef pair<int, int> pii;
+typedef vector<pii> vpii;
+typedef vector<int> vi;
+#define f(x,a,b) for(int x=a;x<b;x++)
+#define all(a) (a).begin(), (a).end()
+#define yes cout<<"YES\n"
+#define no cout<<"NO\n"
+#define ff first
+#define ss second
+const int N=1e5+5;
+ 
+void solve()
+{
+    int n; cin>>n;
+    while(n>1)
+    {
+        cout<<n<<" ";
+        if(n%2==0) n/=2;
+        else n = n*3 + 1;
+    }
+    cout<<1;
+}
+ 
+signed main ()
+{
+ ios_base::sync_with_stdio(0);
+ cin.tie(0);cout.tie(0);
+ 
+//  int t; cin>>t; while(t--)
+ solve();
+}
